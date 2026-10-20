@@ -1,12 +1,12 @@
 import { Routes, Route } from "react-router-dom";
-import Navbar from "./components/navbar";
-import Home from "./pages/Home";
+import Navbar from "./components/navbar.jsx";
+import Home from "./pages/Home.jsx";
 
-import Footer from "./components/Footer";
-import About from "./pages/About";
-import Services from "./pages/Services";
-import Doctorp from "./pages/Doctorp";
-import Contact from "./pages/Contact";
+import Footer from "./components/Footer.jsx";
+import About from "./pages/About.jsx";
+import Services from "./pages/Services.jsx";
+import Doctorp from "./pages/Doctorp.jsx";
+import Contact from "./pages/Contact.jsx";
 
 function App() {
   return (

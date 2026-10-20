@@ -1,7 +1,7 @@
-import Doctor from "../components/Doctor";
-import Equipment from "../components/Equipment";
+import Doctor from "../components/Doctor.jsx";
+import Equipment from "../components/Equipment.jsx";
 
-import HospitalLocation from "../components/HospitalLocation";
+import HospitalLocation from "../components/HospitalLocation.jsx";
 function Home() {
   return (
     <>
