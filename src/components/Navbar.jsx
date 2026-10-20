@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { FaBars, FaTimes } from "react-icons/fa";
-import "./navbar.css";
+import "./Navbar.css";
 import { Link } from "react-router-dom";
 
 function Navbar() {
@@ -12,15 +12,10 @@ function Navbar() {
 
   return (
     <nav className="navbar">
-      
       {/* Logo */}
       <div className="navbar-logo">
         <Link to="/">
-          <img
-            src="/Images/Logo.jpg"
-            alt="EyeCare Logo"
-            
-          />
+          <img src="/Images/Logo.jpg" alt="EyeCare Logo" />
         </Link>
       </div>
 

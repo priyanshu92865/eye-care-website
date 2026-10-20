@@ -1,4 +1,3 @@
-import React from "react";
 import "./About.css";
 import { FaEye, FaUserMd, FaHeart, FaCheckCircle } from "react-icons/fa";
 
@@ -118,7 +117,8 @@ function About() {
 
               <p>{feature.description}</p>
             </article>
-          ))};
+          ))}
+          ;
         </div>
       </section>
 
