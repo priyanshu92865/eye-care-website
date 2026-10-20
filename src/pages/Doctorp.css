@@ -1,0 +1,279 @@
+.doctor-page {
+  width: 100%;
+  padding: 70px 20px;
+  background: linear-gradient(135deg, #f0f9ff, #ffffff);
+  font-family: Arial, sans-serif;
+  color: #17324d;
+  box-sizing: border-box;
+}
+
+.doctor-container {
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 55px;
+}
+
+/* Doctor Image */
+.doctor-image {
+  flex: 0 0 40%;
+  max-width: 430px;
+  position: relative;
+}
+
+.doctor-image img {
+  display: block;
+  width: 100%;
+  height: 520px;
+  object-fit: cover;
+  object-position: center top;
+  border-radius: 24px;
+  background: #dceef8;
+  box-shadow: 0 15px 40px rgba(16, 65, 100, 0.15);
+}
+
+.doctor-award {
+  position: absolute;
+  left: 15px;
+  right: 15px;
+  bottom: 18px;
+  padding: 14px 12px;
+  border-radius: 12px;
+  background: rgba(255, 255, 255, 0.96);
+  color: #124c75;
+  text-align: center;
+  font-size: 15px;
+  font-weight: 700;
+  box-shadow: 0 5px 18px rgba(0, 0, 0, 0.08);
+}
+
+/* Doctor Information */
+.doctor-info {
+  flex: 1;
+  min-width: 0;
+}
+
+.doctor-tag {
+  display: inline-block;
+  padding: 9px 15px;
+  margin-bottom: 18px;
+  background: #dff3ff;
+  color: #0879bd;
+  border-radius: 30px;
+  font-size: 12px;
+  font-weight: 800;
+  letter-spacing: 1.5px;
+}
+
+.doctor-info h1 {
+  margin: 0 0 12px;
+  font-size: clamp(30px, 4vw, 44px);
+  font-weight: 800;
+  line-height: 1.2;
+  color: #123653;
+  overflow-wrap: anywhere;
+}
+
+.doctor-info h3 {
+  margin: 0 0 20px;
+  color: #087fbd;
+  font-size: 21px;
+  font-weight: 600;
+  line-height: 1.5;
+}
+
+.doctor-description {
+  margin-bottom: 28px;
+  color: #64788a;
+  font-size: 16px;
+  line-height: 1.8;
+}
+
+/* Qualification, Expertise, Experience */
+.doctor-detail {
+  display: flex;
+  align-items: flex-start;
+  gap: 15px;
+  margin-bottom: 18px;
+  padding: 16px;
+  background: #ffffff;
+  border: 1px solid #e0edf5;
+  border-radius: 12px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.doctor-detail:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 7px 20px rgba(20, 65, 100, 0.08);
+}
+
+.doctor-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  width: 45px;
+  height: 45px;
+  background: #e8f6ff;
+  border-radius: 10px;
+  font-size: 22px;
+}
+
+.doctor-detail h4 {
+  margin: 0 0 6px;
+  color: #173b59;
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.doctor-detail p {
+  margin: 0;
+  color: #64788a;
+  font-size: 14px;
+  line-height: 1.7;
+  overflow-wrap: anywhere;
+}
+
+/* Appointment Button */
+.doctor-btn {
+  display: inline-block;
+  margin-top: 12px;
+  padding: 15px 25px;
+  border-radius: 9px;
+  background: #087fbd;
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 15px;
+  font-weight: 700;
+  transition: background 0.3s ease, transform 0.3s ease;
+}
+
+.doctor-btn:hover {
+  background: #075786;
+  color: #ffffff;
+  transform: translateY(-2px);
+}
+
+/* Tablet */
+@media (max-width: 992px) {
+  .doctor-page {
+    padding: 50px 20px;
+  }
+
+  .doctor-container {
+    gap: 30px;
+  }
+
+  .doctor-image {
+    flex-basis: 38%;
+  }
+
+  .doctor-image img {
+    height: 450px;
+  }
+
+  .doctor-info h3 {
+    font-size: 18px;
+  }
+
+  .doctor-detail {
+    padding: 13px;
+  }
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  .doctor-page {
+    padding: 35px 16px;
+  }
+
+  .doctor-container {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 35px;
+  }
+
+  .doctor-image {
+    width: 100%;
+    max-width: 380px;
+    flex: auto;
+    margin: 0 auto;
+  }
+
+  .doctor-image img {
+    height: 420px;
+  }
+
+  .doctor-info {
+    width: 100%;
+  }
+
+  .doctor-info h1 {
+    font-size: 32px;
+  }
+
+  .doctor-info h3 {
+    font-size: 18px;
+  }
+
+  .doctor-description {
+    font-size: 15px;
+  }
+}
+
+/* Small Mobile */
+@media (max-width: 480px) {
+  .doctor-page {
+    padding: 28px 12px;
+  }
+
+  .doctor-image img {
+    height: 340px;
+    border-radius: 16px;
+  }
+
+  .doctor-award {
+    left: 10px;
+    right: 10px;
+    bottom: 12px;
+    padding: 11px 8px;
+    font-size: 12px;
+  }
+
+  .doctor-info h1 {
+    font-size: 28px;
+  }
+
+  .doctor-tag {
+    font-size: 11px;
+  }
+
+  .doctor-detail {
+    gap: 11px;
+    padding: 12px;
+  }
+
+  .doctor-icon {
+    width: 38px;
+    height: 38px;
+    font-size: 19px;
+  }
+
+  .doctor-detail h4 {
+    font-size: 14px;
+  }
+
+  .doctor-detail p {
+    font-size: 13px;
+  }
+
+  .doctor-btn {
+    width: 100%;
+    padding: 14px 12px;
+    text-align: center;
+    box-sizing: border-box;
+  }
+}

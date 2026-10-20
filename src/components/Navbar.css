@@ -1,0 +1,138 @@
+
+/* Main Navbar */
+.navbar {
+  width: 100%;
+  min-height: 75px;
+  padding: 0 7%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #ffffff;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
+  position: relative;
+  z-index: 1000;
+}
+
+/* Logo */
+
+.navbar-logo {
+  display: flex;
+  align-items: center;
+  flex-shrink: 0;
+}
+
+.navbar-logo a {
+  display: block;
+}
+
+.navbar-logo img {
+  width: 19    0px;
+  height: 70px;
+  object-fit: contain;
+  display: block;
+}
+
+/* Navigation Links */
+.navbar-links {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar-links li a {
+  color: #333333;
+  font-size: 16px;
+  font-weight: 500;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.navbar-links li a:hover {
+  color: #087f8c;
+}
+
+/* Login Button */
+.navbar-button a {
+  display: inline-block;
+  padding: 10px 24px;
+  background-color: #087f8c;
+  color: white;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: background-color 0.3s ease;
+}
+
+.navbar-button a:hover {
+  background-color: #06636d;
+}
+
+/* Mobile Menu Button */
+.menu-toggle {
+  display: none;
+  background: none;
+  border: none;
+  color: #087f8c;
+  font-size: 25px;
+  cursor: pointer;
+}
+
+/* Hide mobile login on desktop */
+.mobile-login {
+  display: none;
+}
+
+/* Tablet and Mobile */
+@media (max-width: 768px) {
+  .navbar {
+    min-height: 70px;
+    padding: 0 5%;
+  }
+
+  .navbar-logo a {
+    font-size: 24px;
+  }
+
+  /* Show Hamburger */
+  .menu-toggle {
+    display: block;
+    z-index: 1001;
+  }
+
+  /* Hide Desktop Login */
+  .navbar-button {
+    display: none;
+  }
+
+  /* Mobile Navigation Menu */
+  .navbar-links {
+    position: absolute;
+    top: 70px;
+    left: 0;
+    width: 100%;
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    gap: 25px;
+    padding: 25px 0;
+    background-color: #ffffff;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.08);
+  }
+
+  /* Show Menu When Active */
+  .navbar-links.active {
+    display: flex;
+  }
+
+  .navbar-links li a {
+    font-size: 17px;
+  }
+
+  /* Show Mobile Login */
+  .mobile-login {
+    display: block;
+  }
+}

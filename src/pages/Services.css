@@ -1,0 +1,106 @@
+.services-page {
+  color: #183153;
+  font-family: Arial, sans-serif;
+}
+
+.services-hero {
+  padding: 90px 20px;
+  background: linear-gradient(135deg, #e8f5ff, #f4fbff);
+}
+
+.services-hero h1 {
+  font-size: clamp(2.2rem, 5vw, 3.5rem);
+  font-weight: 800;
+  margin-bottom: 20px;
+  color: #123b65;
+}
+
+.services-hero p {
+  max-width: 680px;
+  margin: 0 auto;
+  color: #526579;
+  font-size: 1.1rem;
+  line-height: 1.8;
+}
+
+.service-card {
+  padding: 30px;
+  background: #fff;
+  border: 1px solid #e3edf5;
+  border-radius: 18px;
+  box-shadow: 0 5px 22px rgba(24, 49, 83, 0.06);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.service-card:hover {
+  transform: translateY(-7px);
+  box-shadow: 0 12px 30px rgba(24, 49, 83, 0.12);
+}
+
+.service-icon {
+  width: 65px;
+  height: 65px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #e8f5ff;
+  border-radius: 16px;
+  font-size: 2rem;
+  margin-bottom: 22px;
+}
+
+.service-card h4 {
+  font-size: 1.25rem;
+  font-weight: 700;
+  margin-bottom: 14px;
+}
+
+.service-card p {
+  color: #66778a;
+  line-height: 1.8;
+  min-height: 85px;
+}
+
+.service-link {
+  display: inline-block;
+  margin-top: 12px;
+  color: #0879c9;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.service-link:hover {
+  color: #064f86;
+}
+
+.appointment-section {
+  background: linear-gradient(135deg, #0879c9, #064f86);
+  color: white;
+  margin-top: 30px;
+}
+
+.appointment-section h2 {
+  font-size: clamp(1.8rem, 4vw, 2.5rem);
+  font-weight: 700;
+  margin-bottom: 16px;
+}
+
+.appointment-section p {
+  margin-bottom: 25px;
+  color: #e7f4ff;
+}
+
+.appointment-section .btn {
+  color: #075b99;
+  font-weight: 700;
+}
+
+@media (max-width: 768px) {
+  .services-hero {
+    padding: 65px 18px;
+  }
+
+  .service-card p {
+    min-height: auto;
+  }
+}
