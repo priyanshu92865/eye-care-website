@@ -118,7 +118,7 @@ function About() {
 
               <p>{feature.description}</p>
             </article>
-          ))}
+          ))};
         </div>
       </section>
 
