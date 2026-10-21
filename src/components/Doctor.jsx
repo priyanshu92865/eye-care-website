@@ -6,7 +6,7 @@ function Doctor() {
   const doctors = [
     "/Images/doctor.jpg",
     "/Images/Examine.png",
-    "/Inpmmages/Fullhouse.jpg",
+    "/Images/Fullhouse.jpg",
   ];
 
   const [slider, setSlider] = useState({
