@@ -52,15 +52,18 @@ function Navbar() {
         </li>
 
         <li className="mobile-login">
-          <Link to="/login" onClick={closeMenu}>
+          <a
+            href="https://www.google.com/maps/dir/?api=1&destination=KANPUR+EYE+CENTRE%2C+M.I.G%2C+NEW%2C+Barra+2%2C+Kanpur%2C+Uttar+Pradesh"
+            onClick={closeMenu}
+          >
             Location
-          </Link>
+          </a>
         </li>
       </ul>
 
       {/* Desktop Login Button */}
       <div className="navbar-button">
-        <a href="/login">Location</a>
+        <a href="/contact">Location</a>
       </div>
 
       {/* Hamburger Menu */}

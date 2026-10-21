@@ -1,4 +1,5 @@
 import "./Doctor.css";
+import { Link } from "react-router-dom";
 
 function Doctor() {
   return (
@@ -47,9 +48,9 @@ function Doctor() {
           </div>
         </div>
 
-        <a href="/contact" className="doctor-btn">
+        <Link href="/contact" className="doctor-btn">
           Book an Appointment →
-        </a>
+        </Link>
       </div>
 
       {/* Right Div: Doctor Photo */}

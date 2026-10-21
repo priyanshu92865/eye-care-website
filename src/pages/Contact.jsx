@@ -21,7 +21,7 @@ Phone: ${form.phone}
 Message: ${form.message}`;
 
     window.open(
-      `https://wa.me/91YOURPHONENUMBER?text=${encodeURIComponent(message)}`,
+      `https://wa.me/918299172910?text=${encodeURIComponent(message)}`,
       "_blank",
     );
   };
