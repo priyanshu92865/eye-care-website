@@ -65,7 +65,7 @@ Message: ${form.message}`;
               <h3>Our Address</h3>
               <p>MIG-12,New Barra-2, Near Shastri Chowk,Kanpur Nagar</p>
               <a
-                href="https://www.google.com/maps"
+                href="https://www.google.com/maps/dir/?api=1&destination=KANPUR+EYE+CENTRE%2C+M.I.G%2C+NEW%2C+Barra+2%2C+Kanpur%2C+Uttar+Pradesh"
                 target="_blank"
                 rel="noreferrer"
               >

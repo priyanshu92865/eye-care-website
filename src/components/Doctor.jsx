@@ -48,7 +48,7 @@ function Doctor() {
           </div>
         </div>
 
-        <Link href="/contact" className="doctor-btn">
+        <Link to="/contact" className="doctor-btn">
           Book an Appointment →
         </Link>
       </div>
