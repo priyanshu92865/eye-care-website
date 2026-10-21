@@ -1,7 +1,43 @@
 import "./Doctor.css";
 import { Link } from "react-router-dom";
+import { useState, useEffect } from "react";
 
 function Doctor() {
+  const doctors = [
+    "/Images/doctor.jpg",
+    "/Images/Examine.png",
+    "/Inpmmages/Fullhouse.jpg",
+  ];
+
+  const [slider, setSlider] = useState({
+    current: 0,
+    previous: 0,
+    transitioning: false,
+  });
+
+  useEffect(() => {
+    let timeoutId;
+
+    const intervalId = setInterval(() => {
+      setSlider((prev) => ({
+        previous: prev.current,
+        current: (prev.current + 1) % doctors.length,
+        transitioning: true,
+      }));
+
+      timeoutId = setTimeout(() => {
+        setSlider((prev) => ({
+          ...prev,
+          transitioning: false,
+        }));
+      }, 700);
+    }, 3000);
+
+    return () => {
+      clearInterval(intervalId);
+      clearTimeout(timeoutId);
+    };
+  }, []);
   return (
     <section className="doctor-section">
       {/* Left Div: Doctor Qualifications */}
@@ -56,11 +92,27 @@ function Doctor() {
       {/* Right Div: Doctor Photo */}
       <div className="doctor-image-wrapper">
         <div className="doctor-image-card">
-          <img
-            src="/Images/doctor.jpg"
-            alt="Doctor wearing a white medical coat"
-            className="doctor-image"
-          />
+          <div className="doctor-image-stage">
+            <img
+              src={doctors[slider.previous]}
+              alt="Previous doctor"
+              className={`doctor-image ${
+                slider.transitioning
+                  ? "doctor-image-exit"
+                  : "doctor-image-hidden"
+              }`}
+            />
+
+            <img
+              src={doctors[slider.current]}
+              alt="Doctor"
+              className={`doctor-image ${
+                slider.transitioning
+                  ? "doctor-image-enter"
+                  : "doctor-image-active"
+              }`}
+            />
+          </div>
 
           <div className="doctor-image-caption">
             <span className="doctor-status"></span>
